@@ -1,0 +1,262 @@
+.intro{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1440px;
+
+    background-color: #FFFFFF;
+}
+
+.slider{
+    width: 100%;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+    }
+
+    &__item-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        width: 100%;
+
+        background: rgba(33, 33, 33, 0.5);
+    }
+
+    &__item{
+        display: none;
+
+        &_active{
+            display: block;
+    
+            width: 100%;
+    
+            background-image: url('/dist/img/intro-bg-img.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    
+            color: #FFFFFF;
+        }
+        
+    }
+
+    &__item-title{
+        margin-top: 36px;
+
+        font-weight: 400;
+        font-size: 28px;
+
+        &::after{
+            content: "";
+            display: block;
+    
+            margin: 0 auto;
+            margin-top: 24px;
+            margin-bottom: 30px;
+    
+            width: 61px;
+            height: 8px;
+    
+            background-color: #4A4A4A;
+        }
+    }
+
+    &__pagination{
+        display: flex;
+        justify-content: space-between;
+        
+        width: 50px;
+        
+        position: absolute;
+        bottom: 20px;
+
+    }
+
+    &__pagination-item{
+        display: block;
+
+        width: 10px;
+        height: 10px;
+
+        background-color: #2B4074;
+
+        border-radius: 100px;
+
+        &_active{
+            border: 1px solid #476E4D;
+            background-color: inherit;
+        }
+    }
+
+    &__item-description{
+        display: none;
+    }
+
+    &__control-wrapper{
+        display: none;
+    }
+
+    &__item-link{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .slider__item-description{
+        display: block;
+
+        width: 587px;
+
+        font-size: 18px;
+        font-weight: 400;
+
+        margin-bottom: 32px;
+    }
+
+    .slider__item-title{
+        margin-top: 87px;
+
+        &::after{
+            display: none;
+        }
+
+    }
+
+    .slider__item-link{
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (min-width: 640px) {
+
+    .slider{
+        &__item-link{
+            display: block;
+
+            width: 200px;
+            height: 50px;
+
+            background-color: #2B4074;
+
+            margin-bottom: 103px;
+            padding-top: 16px;
+            
+            border-radius: 3px;
+
+            text-decoration: none;
+            color: #F9F6E5;;
+            font-size: 18px;
+            font-family: 'Roboto';
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        &__control-wrapper{
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+            right: 0;
+        }
+
+
+        &__item-title{
+            margin-top: 50px;
+
+            font-size: 60px;
+
+            &::after{
+              margin-bottom: 35px;
+            }
+
+        }
+
+        &__pagination{
+            bottom: 50px;
+        }
+
+        &__control{
+            width: 56px;
+            height: 56px;
+
+            background-repeat: no-repeat;
+            background-position: center;
+
+            border: none;
+
+            &_prev{
+                background-image: url('/dist/img/forward.svg');
+                background-color: #2B4074;
+                margin-bottom: 1px;
+            }
+
+            &_next{
+                background-image: url('/dist/img/back.svg');
+                background-color: #F9F6E5;
+            }
+        }
+
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .slider__item-title{
+        margin-top: 101px;
+
+        font-size: 84px;
+    }
+
+    .slider__item-description{
+        width: 587px;
+
+        margin-bottom: 12px;
+
+        font-size: 18px;
+    }
+
+    .slider__item-link{
+        margin-bottom: 112px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .slider__item-title{
+        margin-top: 107px;
+
+        font-size: 96px;
+    }
+
+    .slider__pagination-item{
+        background-color: #FFFFFF;
+
+        &_active{
+            background: inherit;
+            border: 1px solid #FFFFFF;
+        }
+    }
+
+    .slider__item-description{
+        width: 886px;
+
+        margin-bottom: 28px;
+
+        font-size: 24px;
+    }
+
+    .slider__item-link{
+        margin-bottom: 124px;
+    }
+}
+
