@@ -52,6 +52,7 @@
 
         font-weight: 400;
         font-size: 28px;
+        line-height: 28px;
 
         &::after{
             content: "";
@@ -59,7 +60,7 @@
     
             margin: 0 auto;
             margin-top: 24px;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
     
             width: 61px;
             height: 8px;
@@ -119,10 +120,14 @@
         font-weight: 400;
 
         margin-bottom: 32px;
+        margin-top: 0;
     }
 
     .slider__item-title{
         margin-top: 87px;
+        margin-bottom: 30px;
+
+        line-height: 60px;
 
         &::after{
             display: none;
@@ -130,8 +135,12 @@
 
     }
 
+    .slider__pagination{
+        bottom: 52px;
+    }
+
     .slider__item-link{
-        margin-bottom: 50px;
+        margin-bottom: 112px;
     }
     
 }
@@ -147,7 +156,7 @@
 
             background-color: #2B4074;
 
-            margin-bottom: 103px;
+            margin-bottom: 113px;
             padding-top: 16px;
             
             border-radius: 3px;
@@ -171,11 +180,14 @@
 
         &__item-title{
             margin-top: 50px;
+            margin-bottom: 0;
 
             font-size: 60px;
+            line-height: 60px;
 
             &::after{
-              margin-bottom: 35px;
+                margin-top: 7px;
+                margin-bottom: 30px;
             }
 
         }
@@ -212,28 +224,41 @@
 @media (min-width: 1024px) {
     .slider__item-title{
         margin-top: 101px;
+        margin-bottom: 30px;
 
         font-size: 84px;
+        line-height: 84px;
     }
 
     .slider__item-description{
         width: 587px;
 
+        margin-top: 0;
         margin-bottom: 12px;
 
         font-size: 18px;
     }
 
     .slider__item-link{
-        margin-bottom: 112px;
+        margin-bottom: 207px;
+    }
+
+    .slider__pagination{
+        bottom: 85px;
     }
 }
 
 @media (min-width: 1440px) {
     .slider__item-title{
         margin-top: 107px;
+        margin-bottom: 18px;
 
         font-size: 96px;
+        line-height: 96px;
+    }
+
+    .slider__pagination{
+        bottom: 80px;
     }
 
     .slider__pagination-item{
@@ -249,12 +274,13 @@
         width: 886px;
 
         margin-bottom: 28px;
+        margin-top: 0;
 
         font-size: 24px;
     }
 
     .slider__item-link{
-        margin-bottom: 124px;
+        margin-bottom: 213px;
     }
 }
 
