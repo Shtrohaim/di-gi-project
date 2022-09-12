@@ -2,14 +2,26 @@
 @use './components/intro.scss';
 @import './fonts.scss';
 
-body{
+.app{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    &__wrapper{
+        margin: 0 auto;
+
+        width: 100%;
+        min-width: 320px;
+        max-width: 1440px;
+    }
+}
+
+.body-container{
+    width: 100%;
 }
 
 *{
-    font-family: Roboto Condensed, Sans-serif, Arial;
+    font-family: 'Roboto Condensed', Sans-serif, Arial;
     box-sizing: border-box;
 }
 
