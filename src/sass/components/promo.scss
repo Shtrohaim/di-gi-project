@@ -1,0 +1,152 @@
+.promo{
+    background-color: #2B4074;
+    width: 100%;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding: 40px 25px;
+
+        text-align: center;
+    }
+
+    &__description-wrapper{
+        text-align: center; 
+    }
+
+    &__slogan{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+        line-height: 24px;
+
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    &__about-us{
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        color:#FFFFFF;
+
+        margin: 0 auto;
+        margin-bottom: 40px;
+        padding: 0;
+
+        br{
+            display: none;
+        }
+    }
+
+    &__call-link{
+        background-color: #F9F6E5;
+
+        padding: 16px 0;
+
+        color:#2B4074;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+
+        width: 200px;
+
+        border-radius: 3px;
+    }
+
+}
+
+@media (min-width: 640px) {
+    .promo__wrapper{
+        padding: 40px 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .promo__wrapper{
+        padding-top: 60px;
+        padding-bottom: 30px;
+        padding-left: 46px;
+        padding-right: 42px;
+
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .promo__slogan{
+        margin-bottom: 20px;
+    }
+
+    .promo__about-us{
+        width: 350px;
+        margin: 0;
+
+        br{
+            display: inline;
+        }
+    }
+
+    .promo__description-wrapper{
+        text-align: left;  
+    }
+
+    .promo__call-link{
+        margin-bottom: 10px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .promo__wrapper{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 43px;
+    }
+
+    .promo__slogan{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .promo__about-us{
+        width: 100%;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .promo__call-link{
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .promo__wrapper{
+        padding-top: 57px;
+        padding-bottom: 57px;
+        padding-right: 149px;
+        padding-left: 150px;
+    }
+
+    .promo__slogan{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .promo__about-us{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .promo__call-link{
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+}

@@ -1,5 +1,7 @@
 @use './components/header.scss';
 @use './components/intro.scss';
+@use './components/promo.scss';
+@import './constants/normilize.scss';
 @import './fonts.scss';
 
 .app{
@@ -22,7 +24,6 @@
 
 *{
     font-family: 'Roboto Condensed', Sans-serif, Arial;
-    box-sizing: border-box;
 }
 
 .visually-hidden{
