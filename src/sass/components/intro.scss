@@ -1,7 +1,9 @@
+@import '../constants/vars';
+
 .intro{
     width: 100%;
 
-    background-color: #FFFFFF;
+    background-color: $white;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -44,7 +46,7 @@
             background-position: center;
             background-size: cover;
     
-            color: #FFFFFF;
+            color: $white;
         }
         
     }
@@ -53,7 +55,7 @@
         margin-top: 36px;
 
         font-weight: 400;
-        font-size: 28px;
+        font-size: $font-28;
         line-height: 28px;
 
         &::after{
@@ -67,7 +69,7 @@
             width: 61px;
             height: 8px;
     
-            background-color: #4A4A4A;
+            background-color: $dark-gray;
         }
     }
 
@@ -88,7 +90,7 @@
         width: 10px;
         height: 10px;
 
-        background-color: #2B4074;
+        background-color: $primary;
 
         border-radius: 100px;
 
@@ -124,15 +126,15 @@
             width: 200px;
             height: 50px;
 
-            background-color: #2B4074;
+            background-color: $primary;
 
             margin-bottom: 113px;
             padding-top: 16px;
             
             border-radius: 3px;
 
-            color: #F9F6E5;;
-            font-size: 18px;
+            color: $bg-white;;
+            font-size: $font-18;
             font-family: 'Roboto';
             font-weight: 400;
             text-transform: uppercase;
@@ -151,7 +153,7 @@
             margin-top: 50px;
             margin-bottom: 0;
 
-            font-size: 60px;
+            font-size: $font-60;
             line-height: 60px;
 
             &::after{
@@ -176,13 +178,13 @@
 
             &_prev{
                 background-image: url('/dist/img/forward.svg');
-                background-color: #2B4074;
+                background-color: $primary;
                 margin-bottom: 1px;
             }
 
             &_next{
                 background-image: url('/dist/img/back.svg');
-                background-color: #F9F6E5;
+                background-color: $bg-white;
             }
         }
 
@@ -197,7 +199,7 @@
 
         width: 587px;
 
-        font-size: 18px;
+        font-size: $font-18;
         font-weight: 400;
 
         margin-bottom: 32px;
@@ -231,7 +233,7 @@
         margin-top: 101px;
         margin-bottom: 30px;
 
-        font-size: 84px;
+        font-size: $font-84;
         line-height: 84px;
     }
 
@@ -241,7 +243,7 @@
         margin-top: 0;
         margin-bottom: 12px;
 
-        font-size: 18px;
+        font-size: $font-18;
     }
 
     .slider__item-link{
@@ -258,7 +260,7 @@
         margin-top: 107px;
         margin-bottom: 18px;
 
-        font-size: 96px;
+        font-size: $font-96;
         line-height: 96px;
     }
 
@@ -267,11 +269,11 @@
     }
 
     .slider__pagination-item{
-        background-color: #FFFFFF;
+        background-color: $white;
 
         &_active{
             background: inherit;
-            border: 1px solid #FFFFFF;
+            border: 1px solid $white;
         }
     }
 
@@ -281,7 +283,7 @@
         margin-bottom: 28px;
         margin-top: 0;
 
-        font-size: 24px;
+        font-size: $font-24;
     }
 
     .slider__item-link{

@@ -1,5 +1,7 @@
+@import '../constants/vars';
+
 .promo{
-    background-color: #2B4074;
+    background-color: $primary;
     width: 100%;
 
     &__wrapper{
@@ -19,8 +21,8 @@
     &__slogan{
         font-family: 'Roboto';
         font-weight: 500;
-        font-size: 24px;
-        color: #FFFFFF;
+        font-size: $font-24;
+        color: $white;
         line-height: 24px;
 
         margin: 0;
@@ -31,9 +33,9 @@
     &__about-us{
         font-family: 'Roboto';
         font-weight: 300;
-        font-size: 16px;
+        font-size: $font-16;
         line-height: 18px;
-        color:#FFFFFF;
+        color:$white;
 
         margin: 0 auto;
         margin-bottom: 40px;
@@ -45,14 +47,14 @@
     }
 
     &__call-link{
-        background-color: #F9F6E5;
+        background-color: $bg-white;
 
         padding: 16px 0;
 
-        color:#2B4074;
+        color:$primary;
         font-family: 'Roboto';
         font-weight: 500;
-        font-size: 18px;
+        font-size: $font-18;
         line-height: 18px;
 
         width: 200px;
@@ -111,13 +113,13 @@
     }
 
     .promo__slogan{
-        font-size: 18px;
+        font-size: $font-18;
         line-height: 18px;
     }
 
     .promo__about-us{
         width: 100%;
-        font-size: 14px;
+        font-size: $font-14;
         line-height: 16px;
     }
 
@@ -136,12 +138,12 @@
     }
 
     .promo__slogan{
-        font-size: 24px;
+        font-size: $font-24;
         line-height: 32px;
     }
 
     .promo__about-us{
-        font-size: 16px;
+        font-size: $font-16;
         line-height: 18px;
     }
 

@@ -1,10 +1,12 @@
+@import '../constants/vars';
+
 .header{
     display: flex;
     justify-content: space-between;
 
     width: 100%;
 
-    background-color: #2B4074;
+    background-color: $primary;
 
     &__logo{
         width: 100px;
@@ -22,7 +24,7 @@
         margin: 20px;
         margin-left: 0;
 
-        background: #FFFFFF;
+        background: $white;
         border-radius: 3px;
         border: none;
 
@@ -34,9 +36,9 @@
             width: 12px;
             height: 2px;
 
-            background-color: #2B4074;
+            background-color: $primary;
             border-radius: 4px;
-            box-shadow: 0 4px #2B4074, 0 -4px #2B4074;
+            box-shadow: 0 4px $primary, 0 -4px $primary;
 
             margin: 0 auto;
         }
