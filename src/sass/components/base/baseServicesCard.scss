@@ -1,0 +1,106 @@
+@import '/src/sass/constants/vars';
+
+.base-services-card{
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    padding-top: 95px;
+    margin: 98px auto;
+
+    width: 100%;
+    min-width: 246px;
+    max-width: 287px;
+
+    &__title{
+        font-weight: 700;
+        font-size: $font-16;
+        line-height: 19px;
+        letter-spacing: 2px;
+        color: $dark-gray;
+        text-transform: uppercase;
+    }
+
+    &__description{
+        display: none;
+    }
+
+    &__more-link{
+        display: none;
+    }
+}
+
+.base-services-card_active{
+    border: 4px solid $primary;
+
+    background-position: center 42px;
+
+    padding-top: 112px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+
+    .base-services-card__description{
+        display: block;
+
+        width: 196px;
+
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: $font-16;
+        line-height: 18px;
+        color: $light-gray;
+        letter-spacing: 1px;
+
+        margin: auto;
+        margin-top: 21px;
+        margin-bottom: 17px;
+    }
+
+    .base-services-card__more-link{
+        display: block;
+
+        font-weight: 700;
+        font-size: $font-16;
+        line-height: 19px;
+        color: $primary;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        &::after{
+            content: ' \2192';
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .base-services-card{
+        max-width: 331px;
+    }
+
+    .base-services-card_active{
+        padding-bottom: 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .base-services-card{
+        min-width: 220px;
+        max-width: 222px;
+    }
+
+    .base-services-card_active{
+        padding-bottom: 20px;
+
+        .base-services-card__description{
+            font-weight: 500;
+            letter-spacing: 0;
+        }
+    
+    }
+}
+
+@media (min-width: 1440px) {
+    .base-services-card{
+        min-width: 210px;
+        max-width: 212px;
+    }
+}
