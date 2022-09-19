@@ -2,11 +2,12 @@ const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
-    mode: 'development',
+   mode: 'development',
    entry: './src/index.js',
    output: {
       filename: 'bundle.js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: "/di-gi-project/",
    },
    module: {
       rules: [{
@@ -36,5 +37,5 @@ module.exports = {
     compress: true,
     port: 8080,
   },
-   
+
 };
