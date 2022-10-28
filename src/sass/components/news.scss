@@ -44,6 +44,9 @@
 
         background-color: $white;
 
+        page-break-inside: avoid;
+        break-inside: avoid;
+
         &:hover{
             border: 10px solid $primary;
 
@@ -108,19 +111,28 @@
 
     &__image{
         width: 270px;
-        border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 10px 10px;
     }
 
     &__description{
-        margin-left: 20px;
-        margin-top: 8px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+
+        border-radius: 0 0 4px 4px;
+
+        padding-top: 8px;
         padding-bottom: 10px;
+        padding-left: 20px;
 
         font-weight: 700;
         font-size: $font-18;
         line-height: 21px;
         letter-spacing: 2px;
         color: $dark-gray;
+        background-color: $white;
     }
 
 
@@ -138,9 +150,79 @@
 }
 
 @media (min-width: 640px) {
+    .news{
+        &__title{
+            font-size: $font-48;
+            line-height: 38px;
+
+            &::after{
+                width: 100px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
     .news__list{
         columns: 4 270px;
-        column-gap: 32px;
+        column-gap: 30px;
         margin: 0 auto;
+    }
+
+    .news__list-item{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 769px) {
+    .news{
+        padding-left: 80px;
+        padding-right: 119px;
+
+        &__title{
+            font-size: $font-36;
+            line-height: 38px;
+
+            &::after{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .news{
+        padding-bottom: 80px;
+        padding-top: 65px;
+        padding-left: 75px;
+        padding-right: 79px;
+
+        &__title{
+            font-size: $font-48;
+            line-height: 56px;
+
+            &::after{
+                margin-bottom: 96px;
+            }
+        }
+    }
+
+    .news__list-item{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .news{
+        padding-top: 52px;
+        padding-left: 135px;
+        padding-right: 120px;
+
+        &__title{
+            &::after{
+                margin-bottom: 115px;
+            }
+        }
     }
 }
