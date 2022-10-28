@@ -29,7 +29,7 @@
     }
 }
 
-.base-services-card_active{
+.base-services-card:hover{
     border: 4px solid $primary;
 
     background-position: center 42px;
@@ -76,7 +76,7 @@
         max-width: 331px;
     }
 
-    .base-services-card_active{
+    .base-services-card:hover{
         padding-bottom: 35px;
     }
 }
@@ -87,7 +87,7 @@
         max-width: 222px;
     }
 
-    .base-services-card_active{
+    .base-services-card:hover{
         padding-bottom: 20px;
 
         .base-services-card__description{
