@@ -1,0 +1,22 @@
+@import '../constants/vars';
+
+.address{
+    margin-bottom: 36px;
+    &__title{
+        font-weight: 700;
+        font-size: $font-18;
+        line-height: 21px;
+        letter-spacing: 2px;
+
+        color: $bg-white;
+
+        margin-bottom: 18px;
+    }
+
+    &__description{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: $font-16;
+        line-height: 20px;
+    }
+}
