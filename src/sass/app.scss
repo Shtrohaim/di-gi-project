@@ -2,7 +2,6 @@
 @use './components/intro.scss';
 @use './components/promo.scss';
 @use './components/ourTeam.scss';
-@use './components/base/baseModal.scss';
 @use './components/services.scss';
 @use './components/projects.scss';
 @use './components/news.scss';
@@ -11,6 +10,7 @@
 @use './components/address.scss';
 @use './components/faq.scss';
 @use './components/menu.scss';
+@use './components/citation.scss';
 @import './constants/normilize.scss';
 @import './constants/fonts';
 

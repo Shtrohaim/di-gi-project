@@ -30,27 +30,17 @@
             <h1 class="visually-hidden">Диджитал агентство Di Gi</h1>
             <section class="intro">
                <h2 class="visually-hidden">Главная</h2>
-               <div class="slider">
+               <div class="intro_slider slider">
                   <div class="slider__wrapper">
                      <div class="slider__item slider__item_active">
-                        <div class="slider__item-wrapper">
-                           <h3 class="slider__item-title">
-                              МЫСЛИ <br /> ГЛОБАЛЬНО
-                           </h3>
-                           <p class="slider__item-description">Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
-                           <a class="slider__item-link" href="#">Подробнее</a>
-                        </div>
-                     </div>
-                     <div class="slider__item">
-                        <div class="slider__item-wrapper">
-                           <h3 class="slider__item-title">
-                              МЫСЛИ <br /> ГЛОБАЛЬНО
-                           </h3>
-                           <p class="slider__item-description">Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
-                           <a class="slider__item-link" href="#">Подробнее</a>
-                        </div>
-                     </div>
-                     <div class="slider__item">
+                        <picture class="slider__background">
+                           <source media="(max-width: 320px)" srcset="./img/intro-bg-img-320.jpg" />
+                           <source media="(max-width: 640px)" srcset="./img/intro-bg-img-640.jpg" />
+                           <source media="(max-width: 769px)" srcset="./img/intro-bg-img-769.jpg" />
+                           <source media="(max-width: 1023px)" srcset="./img/intro-bg-img-1024.jpg" />
+                           <source media="(max-width: 1440px)" srcset="./img/intro-bg-img-1440.jpg" />
+                           <img src="./img/intro-bg-img-1440.jpg">
+                        </picture>
                         <div class="slider__item-wrapper">
                            <h3 class="slider__item-title">
                               МЫСЛИ <br /> ГЛОБАЛЬНО
@@ -70,7 +60,6 @@
                      </div>
                   </div>
                </div>
-   
             </section>
             <section class="promo">
                <h2 class="visually-hidden">О нас</h2>
@@ -259,6 +248,23 @@
                   </li>
                </ul>
             </section>
+            <section class="citation">
+               <h2 class="visually-hidden">Цитаты</h2>
+               <img class="citation__decoration" src="./img/citation-decor.png" alt="">
+               <div class="citation__slider">
+                     <div class="citation__slider-item">
+                        <div class="citation__slider-item-wrapper">
+                           <p class="citation__slider-item-description">Если нужно создавать либо повышать имидж компании, то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
+                           <p class="citation__slider-item-author">- Маргарита Акулич</p>
+                        </div>
+                     <div class="citation__slider-pagination">
+                        <div class="citation__slider-pagination-item citation__slider-pagination-item_active"></div>
+                        <div class="citation__slider-pagination-item"></div>
+                        <div class="citation__slider-pagination-item"></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
          </main>
          <footer class="footer">
             <div class="footer__logo-wrapper">
@@ -312,23 +318,6 @@
                </li>
             </ul>
          </footer>
-      </div>
-      <div class="modal modal-video">
-         <div class="modal__card">
-            <span class="modal__close-button"></span>
-            <h2 class="modal-video__title">Название видео</h2>
-            <iframe class="modal-video__videoplayer" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>  
-      </div>
-      <div class="modal modal-form">
-         <div class="modal__card">
-            <span class="modal__close-button"></span>
-         <form action="#" method="get">
-            <h2>Связаться</h2>
-            <input placeholder="Номер" type="tel" />
-            <button>Отправить</button>
-         </form>
-         </div>  
       </div>
    </body>
 </html>
