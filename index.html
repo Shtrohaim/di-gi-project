@@ -30,27 +30,17 @@
             <h1 class="visually-hidden">Диджитал агентство Di Gi</h1>
             <section class="intro">
                <h2 class="visually-hidden">Главная</h2>
-               <div class="slider">
+               <div class="intro_slider slider">
                   <div class="slider__wrapper">
                      <div class="slider__item slider__item_active">
-                        <div class="slider__item-wrapper">
-                           <h3 class="slider__item-title">
-                              МЫСЛИ <br /> ГЛОБАЛЬНО
-                           </h3>
-                           <p class="slider__item-description">Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
-                           <a class="slider__item-link" href="#">Подробнее</a>
-                        </div>
-                     </div>
-                     <div class="slider__item">
-                        <div class="slider__item-wrapper">
-                           <h3 class="slider__item-title">
-                              МЫСЛИ <br /> ГЛОБАЛЬНО
-                           </h3>
-                           <p class="slider__item-description">Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении</p>
-                           <a class="slider__item-link" href="#">Подробнее</a>
-                        </div>
-                     </div>
-                     <div class="slider__item">
+                        <picture class="slider__background">
+                           <source media="(max-width: 320px)" srcset="./img/intro-bg-img-320.jpg" />
+                           <source media="(max-width: 640px)" srcset="./img/intro-bg-img-640.jpg" />
+                           <source media="(max-width: 769px)" srcset="./img/intro-bg-img-769.jpg" />
+                           <source media="(max-width: 1023px)" srcset="./img/intro-bg-img-1024.jpg" />
+                           <source media="(max-width: 1440px)" srcset="./img/intro-bg-img-1440.jpg" />
+                           <img src="./img/intro-bg-img-1440.jpg">
+                        </picture>
                         <div class="slider__item-wrapper">
                            <h3 class="slider__item-title">
                               МЫСЛИ <br /> ГЛОБАЛЬНО
@@ -70,7 +60,6 @@
                      </div>
                   </div>
                </div>
-   
             </section>
             <section class="promo">
                <h2 class="visually-hidden">О нас</h2>
@@ -90,7 +79,7 @@
                </div> 
                <ul class="services__list">
                   <li class="services__list-item">
-                     <div class="base-services-card base-services-card_active services__strategy">
+                     <div class="base-services-card services__strategy">
                         <h3 class="base-services-card__title">СТРАТЕГИЯ</h3>
                         <p class="base-services-card__description">Создадим уникальный и удобный дизайн.</p>
                         <a class="base-services-card__more-link" href="#">Подробнее</a>
@@ -198,14 +187,137 @@
                </p>
                <a class="our-team__video-link" href="https://youtu.be/dQw4w9WgXcQ">СМОТРЕТЬ ВИДЕО</a>
             </section>
+            <section class="news">
+               <h2 class="news__title">Последние Новости</h2>
+               <ul class="news__list">
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-1.jpg" alt="di-gi-news">
+                     <p class="news__description">3Д в брендинге</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-2.jpg" alt="di-gi-news">
+                     <p class="news__description">Контекстная реклама</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-3.jpg" alt="di-gi-news">
+                     <p class="news__description">Графика</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-4.jpg" alt="di-gi-news">
+                     <p class="news__description">Корпоративная культура</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-5.jpg" alt="di-gi-news">
+                     <p class="news__description">Уникальный дизайн</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-6.jpg" alt="di-gi-news">
+                     <p class="news__description">Взгляд со стороны</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-7.jpg" alt="di-gi-news">
+                     <p class="news__description">Соц сети и их польза</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+                  <li class="news__list-item">
+                     <img class="news__image" src="./img/news-8.jpg" alt="di-gi-news">
+                     <p class="news__description">Эксклюзивность</p>
+                     <div class="news__info-wrapper">
+                        <a class="news__link" href="#"></a>
+                     </div>
+                  </li>
+               </ul>
+            </section>
+            <section class="citation">
+               <h2 class="visually-hidden">Цитаты</h2>
+               <img class="citation__decoration" src="./img/citation-decor.png" alt="">
+               <div class="citation__slider">
+                     <div class="citation__slider-item">
+                        <div class="citation__slider-item-wrapper">
+                           <p class="citation__slider-item-description">Если нужно создавать либо повышать имидж компании, то <span>диджитал-маркетинг</span> является наиболее подходящим</p>
+                           <p class="citation__slider-item-author">- Маргарита Акулич</p>
+                        </div>
+                     <div class="citation__slider-pagination">
+                        <div class="citation__slider-pagination-item citation__slider-pagination-item_active"></div>
+                        <div class="citation__slider-pagination-item"></div>
+                        <div class="citation__slider-pagination-item"></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
          </main>
-      </div>
-      <div class="modal modal-video">
-         <div class="modal__card">
-            <span class="modal__close-button"></span>
-            <h2 class="modal-video__title">Название видео</h2>
-            <iframe class="modal-video__videoplayer" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>  
+         <footer class="footer">
+            <div class="footer__logo-wrapper">
+               <img class="footer__logo" src="./logo.svg" alt="di-gi-logo" />
+            </div>
+            <p class="footer__slogan">Мы хотели бы услышать все о вашем проекте. Свяжись с нами.</p>
+            <ul class="footer__social-list">
+               <li class="footer__social-list-item"><a class="footer__social-link footer__social-link_facebook" href="https://ru-ru.facebook.com"></a></li>
+               <li class="footer__social-list-item"><a class="footer__social-link footer__social-link_google" href="https://myaccount.google.com/?hl=ru&pli=1"></a></li>
+               <li class="footer__social-list-item"><a class="footer__social-link footer__social-link_twitter" href="https://twitter.com/?lang=ru"></a></li>
+               <li class="footer__social-list-item"><a class="footer__social-link footer__social-link_pinterest" href="https://ru.pinterest.com"></a></li>
+            </ul>
+            <ul class="footer__option-list">
+               <li class="footer__option-list-item contacts">
+                     <h2 class="contacts__title">КОНТАКТЫ</h2>
+                     <p class="contacts__link-wrapper">
+                        <a class="contacts__link" href="tel:+805555566">+80 555 55 66</a> <br />
+                        <a class="contacts__link" href="mailto: digi@gmail.com">digi@gmail.com</a>
+                     </p>
+               </li>
+               <li class="footer__option-list-item address">
+                  <h2 class="address__title">АДРЕС</h2>
+                  <p class="address__description">
+                     Пр. Науки 107 <br /> 
+                     Kиев / Украина
+                  </p>
+               </li>
+               <li class="footer__option-list-item faq">
+                     <h2 class="faq__title">ПОМОЩЬ</h2>
+                     <p class="faq__description">
+                        <a class="faq__link" href="#">Как с нами связаться?</a> <br />
+                        <a class="faq__link" href="#">Что такое диджитал?</a> <br />
+                        <a class="faq__link" href="#">Стоимость услуг</a>
+                     </p>
+               </li>
+               <li class="footer__option-list-item">
+                  <nav class="navigation footer__navigation">
+                     <h2 class="navigation__title">МЕНЮ</h2>
+                     <ul class="navigation__list">
+                        <li class="navigation__list-item">
+                           <a class="navigation__link" href="#">Наши проекты</a>
+                        </li>
+                        <li class="navigation__list-item">
+                           <a class="navigation__link" href="#">Команда</a>
+                        </li>
+                        <li class="navigation__list-item">
+                           <a class="navigation__link" href="#">Блог</a>
+                        </li>
+                     </ul>
+                  </nav>  
+               </li>
+            </ul>
+         </footer>
       </div>
    </body>
 </html>
